@@ -79,6 +79,13 @@ export function near100(n, distance) {
  */
 export function isMultiple35(n) {
   /* TODO */
+  if (n % 3 === 0) {
+    return true;
+  } else if (n % 5 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /**
@@ -97,6 +104,11 @@ export function isMultiple35(n) {
  */
 export function shareLastDigit(num1, num2) {
   /* TODO */
+  if (num1 % 10 === num2 % 10) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /**
@@ -114,6 +126,13 @@ export function shareLastDigit(num1, num2) {
  */
 export function isColdAndHot(temp1, temp2) {
   /* TODO */
+  if (temp1 < 0 && temp2 > 100) {
+    return true;
+  } else if (temp1 > 100 && temp2 < 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /**
